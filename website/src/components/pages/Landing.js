@@ -52,7 +52,7 @@ function Landing() {
           </p>
         </div>
       </div>
-      <div className = "big-box big-box-3">
+      <div className = "big-box big-box-4">
         <div className = "text-box text-box-4">
           <p className = "descriptor">
             I have also created projects related to web design, databases, online games, and data science

@@ -6,7 +6,6 @@ export default function Header() {
       <ul>
         <CustomLink to = "/"> Home </CustomLink>
         <CustomLink to = "/about"> About </CustomLink>
-        <CustomLink to = "/contact"> Contact </CustomLink>
         <CustomLink to = "/projects"> Projects </CustomLink>
       </ul>
       <div className = "name">

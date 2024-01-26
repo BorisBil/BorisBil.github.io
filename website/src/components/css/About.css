@@ -1,0 +1,25 @@
+.about-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 20px;
+    align-items: center;
+}
+
+.portrait-box {
+    width: 20%;
+    height: 20%;
+}
+
+.portrait-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.text-box {
+    font-size: 18px;
+}
