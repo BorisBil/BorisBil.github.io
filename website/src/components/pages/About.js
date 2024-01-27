@@ -7,7 +7,7 @@ function About() {
     <Layout>
       <div className = "about-wrapper">
         <div className = "portrait-box">
-          <img src = {require("../images/me.jpg")} alt = "unity editor"></img>
+          <img src = {require("../images/miscal/me.jpg")} alt = "unity editor"></img>
         </div>
         <div className = "text-box">
           <p>

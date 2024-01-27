@@ -7,7 +7,7 @@ function Landing() {
     <div className = "wrapper">
       <div className = "big-box big-box-1">
         <div className = "image-box image-box-1">
-          <img src = {require("../images/unity.PNG")} alt = "unity editor"></img>
+          <img src = {require("../images/landing-images/unity.PNG")} alt = "unity editor"></img>
         </div>
         <div className = "text-box text-box-1">
           <p className = "descriptor">
@@ -33,12 +33,12 @@ function Landing() {
           </p>
         </div>
         <div className = "image-box image-box-2">
-          <img src = {require("../images/game-engine.PNG")} alt = "unity editor"></img>
+          <img src = {require("../images/landing-images/game-engine.PNG")} alt = "unity editor"></img>
         </div>
       </div>
       <div className = "big-box big-box-3">
         <div className = "image-box image-box-3">
-          <img src = {require("../images/script.PNG")} alt = "unity editor"></img>
+          <img src = {require("../images/landing-images/script.PNG")} alt = "unity editor"></img>
         </div>
         <div className = "text-box text-box-3">
           <p className = "descriptor">
@@ -56,9 +56,6 @@ function Landing() {
         <div className = "text-box text-box-4">
           <p className = "descriptor">
             I have also created projects related to web design, databases, online games, and data science
-          </p>
-          <p className = "descriptor">
-            Come check out everything I have to offer in the projects section
           </p>
         </div>
       </div>
