@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <nav className = "nav">
       <ul>
-        <CustomLink to = "/"> Home </CustomLink>
-        <CustomLink to = "/about"> About </CustomLink>
+        <CustomLink to = "/"> About </CustomLink>
         <CustomLink to = "/projects"> Projects </CustomLink>
+        <CustomLink to = "/blog"> Blog </CustomLink>
       </ul>
       <div className = "name">
         <h3>Boris Bilogur</h3>

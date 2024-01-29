@@ -6,6 +6,7 @@ function Projects() {
   return (
     <Layout>
       <div className = "project-wrapper">
+        
         <div className = "project-box project-box-1">
           <div className = "project-image project-image-1">
             <a rel = "noreferrer noopener" href = "https://github.com/BorisBil/fantasy-tactics" target = "_blank">
@@ -24,6 +25,7 @@ function Projects() {
             </p>
           </div>
         </div>
+        
         <div className = "project-box project-box-2">
           <div className = "project-image project-image-2">
             <a rel = "noreferrer noopener" href = "https://github.com/BorisBil/Operation-Spirit" target = "_blank">
@@ -42,6 +44,7 @@ function Projects() {
             </p>
           </div>
         </div>
+        
         <div className = "project-box project-box-3">
           <div className = "project-image project-image-3">
             <a rel = "noreferrer noopener" href = "https://github.com/camillac/CatBurglars" target = "_blank">
@@ -60,6 +63,7 @@ function Projects() {
             </p>
           </div>
         </div>
+        
         <div className = "project-box project-box-4">
           <div className = "project-image project-image-4">
             <a rel = "noreferrer noopener" href = "https://github.com/BorisBil/Boris_Bilogur_Fall22" target = "_blank">
@@ -78,6 +82,7 @@ function Projects() {
             </p>
           </div>
         </div>
+        
         <div className = "project-box project-box-5">
           <div className = "project-image project-image-5">
             <a rel = "noreferrer noopener" href = "https://github.com/BorisBil/WTStatistics" target = "_blank">
@@ -93,6 +98,24 @@ function Projects() {
               format. It calculates session stats, as well as provides a search function where you can either specify certain
               vehicles or search for all vehicles that share the input's content. The bot displays everything in tables and
               comes complete with pagination.
+            </p>
+          </div>
+        </div>
+        
+        <div className = "project-box project-box-6">
+          <div className = "project-image project-image-6">
+            <a rel = "noreferrer noopener" href = "https://github.com/BorisBil/final-backend" target = "_blank">
+              <img src = {require('../images/project-images/database-project.png')} alt = "data science project"></img>
+            </a>
+          </div>
+          <div className = "project-text project-text-5">
+            <h1>Postgres Database</h1>
+            <h3>Javascript</h3>
+            <p className = "summarization">
+              My final project for Practical Web Development consisted of creating a fullstack CRUD web application
+              connected to a local postgres sql database. I used Pg and Sequelize to create and seed the database, then used
+              Express to create a local server to host the data. The front-end UI is built using React, and actions are communicated
+              to the server by using Redux stores and thunks, as well as Axios for the http client.
             </p>
           </div>
         </div>
