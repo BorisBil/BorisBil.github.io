@@ -22,6 +22,7 @@ body {
   align-items: stretch;
   gap: 4rem;
   padding: 0 2rem;
+  font-family: sans-serif;
 }
 
 .nav ul {
@@ -39,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   padding: .25rem;
+  font-size: 15px;
 }
 
 .nav li.active {

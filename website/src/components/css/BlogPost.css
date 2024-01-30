@@ -1,21 +1,22 @@
 .blog-post-wrapper {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 15px;
     padding: 20px;
-    align-items: center;
+    justify-content: center;
 }
 
 .intro-image {
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    padding: 10px;
+    margin: 0 auto;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 700px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
 }
 
 .intro-image img {
@@ -26,26 +27,28 @@
 }
 
 .big-text-box {
-    width: 70%;
-    height: 70%;
-    margin: auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 95%;
+    font-family: sans-serif;
     font-size: large;
     text-align: left;
 }
 
 .small-text-box {
-    width: 30%;
-    height: 30%;
     margin: auto;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 35%;
+    font-family: sans-serif;
     font-size: large;
     text-align: left;
 }
 
 .big-box {
-    width: 90%;
-    height: 90%;
+    min-width: 300px;
+    max-width: 95%;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -53,16 +56,21 @@
     margin-bottom: 1%;
     padding: 5px;
     vertical-align: top;
+    justify-content: center;
 }
 
 .code-box {
-    width: 60%;
-    height: 60%;
+    min-width: 100px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
     text-align: left;
     font-size: 14px;
     border: solid 1px #CCC;
-    padding: 10px;
-    margin: 1%;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    justify-content: center;
 }
 
 .code-box p {
@@ -71,24 +79,18 @@
 }
 
 .image-box {
-    width: 60%;
-    height: 60%;
+    margin: auto;
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 700px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
 }
 
 .image-box img {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.image-box-code {
-    width: 550px;
-    height: 350px;
-    margin: auto;
-}
-
-.image-box-code img {
-    width: 100%;
+    min-height: 400px;
     height: 100%;
     object-fit: fill;
 }

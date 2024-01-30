@@ -17,7 +17,7 @@ function Projects() {
             <h1>Unity</h1>
             <h3>C#</h3>
             <p className = "summarization">
-              This is my currently in progress turn-based fantasy strategy hybrid game that I have
+              This is an in progress turn-based fantasy strategy hybrid game that I have
               been developing for a couple of months. In it, I come across many questions regarding
               feature implementation and game design, and I answer them while also keeping in mind user 
               experience as well as functionality and optimization. Some features included are a
@@ -56,8 +56,8 @@ function Projects() {
             <h3>Javascript</h3>
             <p className = "summarization">
               For my capstone project in Hunter, my group decided to build a simple multiplayer IO game.
-              We used express and websockets to build out the back-end, and built the front-end on the popular
-              Web Canvas game engine Phaser. Players host lobbies and join them through codes, up to a max of 4
+              We used express and websockets to build out the back-end, The back-end was built with express and websockets, 
+              while the front-end was built with the popular Web Canvas game engine - Phaser. Players host lobbies and join them through codes, up to a max of 4
               players per lobby. When the game starts, they get put through the gameloop with accurate server-side
               timekeeping, with the server also responsible for synchronizing all of the players.
             </p>
@@ -74,11 +74,9 @@ function Projects() {
             <h1>Game Engine</h1>
             <h3>C++</h3>
             <p className = "summarization">
-              Four years at Hunter taught me much about development using C++, since every programming class we 
-              had used the language. This basic 2D game engine, complete with hitbox detection based on image dimensions,
-              as well as rendering and a canvas for drawing objects, is my best project with C++ thus far.
-              The Game Engine class navigated difficult obstacles when making such an engine, as well as complex
-              math problems and their implementations into code.
+              Four years at Hunter taught me much about development using C++. This basic 2D game engine comes 
+              complete with hitbox detection based on image dimensions, rendering, a canvas for drawing objects, and
+              an interface to build games with.
             </p>
           </div>
         </div>
