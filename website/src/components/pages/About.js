@@ -14,12 +14,11 @@ function About() {
             Hello! Welcome to my personal website. I am a recent graduate from Hunter College with a BA in Computer Science. 
           </p>
           <p>
-            I am proficient in Lua, Python, C++, C#, Javascript, and SQL. I have work involving Data Science, Databases, Web Development, Game Development, and
+            I am proficient in Lua, Python, C++, C#, JavaScript, and SQL. I have done work in Data Science, Databases, Web Development, Game Development, and
             Game Engine Development.
           </p>
           <p>
-            I have also worked in IT with experience in building PCs, be they for myself,
-            friends, or for customers.
+            I have also worked in IT and have experience in building PCs.
           </p>
         </div>
       </div>

@@ -1,19 +1,19 @@
-const Tile = `
-public class Tile : MonoBehaviour
+const Tile = `---------------------------------------------------------------------
+// TileType.cs
+
+public class TileType
 {
-    public Vector3 tileLocation;
-    public bool isClickable = false;
+    public string name;
+    public GameObject tileVisualPrefab;
 
+    public bool isWalkable = true;
     public bool isRamp;
-    public bool hasProp;
 
-    public Dictionary<string, string> coverOnTile;
-    
-    public TileMap map;
+    public float movementCost = 1;
 }
-`
+---------------------------------------------------------------------
+// TileSets.cs
 
-const TileSets = `
 public class TileSets
 {
     [System.Serializable]
@@ -28,24 +28,29 @@ public class TileSets
 
     }
 }
-`
+---------------------------------------------------------------------
+// Tile.cs
 
-const TileTypes = `
-public class TileType
+public class Tile : MonoBehaviour
 {
-    public string name;
-    public GameObject tileVisualPrefab;
+    public Vector3 tileLocation;
+    public bool isClickable = false;
 
-    public bool isWalkable = true;
     public bool isRamp;
+    public bool hasProp;
 
-    public float movementCost = 1;
+    public Dictionary<string, string> coverOnTile;
+    
+    public TileMap map;
 }
+---------------------------------------------------------------------
 `
 
-const TileMap = `
-  public void GenerateGrassyHills(int mapSizeX, int mapSizeY, int mapSizeZ)
-  {
+const TileMap = `---------------------------------------------------------------------
+// TileMap.cs
+
+public void GenerateGrassyHills(int mapSizeX, int mapSizeY, int mapSizeZ)
+{
     grassyHills.GenerateMapData(mapSizeX, mapSizeY, mapSizeZ);
     grassyHills.GeneratePropData(mapSizeX, mapSizeX, mapSizeZ);
     grassyHills.GenerateMapVisual();
@@ -57,10 +62,10 @@ const TileMap = `
 
     walkableNodes = grassyHills.ReturnWalkableNodeList();
     lightsGraph = grassyHills.ReturnLightGraph();
-  }
-`
-
-const GenerateGrassyHillsPart1 = `
+}
+---------------------------------------------------------------------
+// GrassyHills.cs
+  
 public void GenerateMapData(int mapSizeX, int mapSizeY, int mapSizeZ)
 {
     tileTypeMap = new Dictionary<Vector3, TileSets.GrassyHillTiles>();
@@ -78,7 +83,9 @@ public void GenerateMapData(int mapSizeX, int mapSizeY, int mapSizeZ)
             float rollElevationChance = Random.Range(0.0f, 1.0f);
 `
 
-const GenerateGrassyHillsPart2 = `
+const GenerateGrassyHillsPart2 = 
+`// GrassyHills.cs
+            
             if (rollTerrainChance <= 0.9f && x < mapSizeX - 2 && y < mapSizeY - 2)
                 {
                     tileTypeMap[new Vector3(x, y, 0)] = grassyHills[0];
@@ -113,8 +120,10 @@ const GenerateGrassyHillsPart2 = `
                 }
 `
 
-const GenerateGrassyHillsPart3 = `
-                if (x < mapSizeX - 2 && y < mapSizeY - 2)
+const GenerateGrassyHillsPart3 = 
+`// GrassyHills.cs
+                
+            if (x < mapSizeX - 2 && y < mapSizeY - 2)
                 {
                     if (rollTerrainChance > 0.9f && rollTerrainChance < 1.0f)
                     {
@@ -127,9 +136,13 @@ const GenerateGrassyHillsPart3 = `
             }
         }
     }
+---------------------------------------------------------------------
 `
 
-const PropType = `
+const Prop = 
+`---------------------------------------------------------------------
+// PropType.cs
+
 public class PropType
 {
     public string name;
@@ -140,9 +153,9 @@ public class PropType
 
     public float coverType;
 }
-`
+---------------------------------------------------------------------
+// PropSets.cs
 
-const PropSets = `
 public class PropSets
 {
     [System.Serializable]
@@ -157,9 +170,9 @@ public class PropSets
 
     }
 }
-`
+---------------------------------------------------------------------
+// Prop.cs
 
-const Prop = `
 public class Prop : MonoBehaviour
 {
     public Vector3 location;
@@ -171,9 +184,13 @@ public class Prop : MonoBehaviour
 
     public TileMap map;
 }
+---------------------------------------------------------------------
 `
 
-const GeneratePropData = `
+const GeneratePropData = 
+`--------------------------------------------------------------------- 
+// GrassyHills.cs
+
 public void GeneratePropData(int mapSizeX, int mapSizeY, int mapSizeZ)
 {
     propTypeMap = new Dictionary<Vector3, GrassyHillProps>();
@@ -218,9 +235,12 @@ public void GeneratePropData(int mapSizeX, int mapSizeY, int mapSizeZ)
         }
     }
 }
+---------------------------------------------------------------------
 `
 
-const GenerateMapVisual = `
+const GenerateMapVisual = 
+`---------------------------------------------------------------------
+// GrassyHills.cs
 public void GenerateMapVisual()
 {
       tileMapDict = new Dictionary<Vector3, Tile>();
@@ -268,10 +288,9 @@ public void GenerateMapVisual()
           propList.Add(propInfo);
       }
 }
+---------------------------------------------------------------------
 `
 
-export {    Tile, TileMap, TileSets, TileTypes,
-            GenerateGrassyHillsPart1, GenerateGrassyHillsPart2, GenerateGrassyHillsPart3,
-            Prop, PropSets, PropType, 
-            GeneratePropData, GenerateMapVisual
-        } 
+export {    Tile, TileMap,
+            GenerateGrassyHillsPart2, GenerateGrassyHillsPart3,
+            Prop, GeneratePropData, GenerateMapVisual     } 

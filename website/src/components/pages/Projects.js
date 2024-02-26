@@ -14,14 +14,11 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-1">
-            <h1>Unity</h1>
-            <h3>C#</h3>
+            <h1>Fantasy Tactics</h1>
             <p className = "summarization">
               This is an in progress turn-based fantasy strategy hybrid game that I have
-              been developing for a couple of months. In it, I come across many questions regarding
-              feature implementation and game design, and I answer them while also keeping in mind user 
-              experience as well as functionality and optimization. Some features included are a
-              procedurally generated map, pathfinding, attack calculations, a vision mechanic, and basic AI behaviors.
+              been developing in Unity. Features include a procedurally generated map, 
+              pathfinding, attack calculations, a vision mechanic, and basic AI behaviors.
             </p>
           </div>
         </div>
@@ -33,14 +30,12 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-2">
-            <h1>Campaign Scripting</h1>
-            <h3>Lua</h3>
+            <h1>Operation Spirit (FAF)</h1>
             <p className = "summarization">
-              The campaign scripting project involved learning what tools are available in an older 
-              engine in an RTS game from 2007, with the help of other people. Documentation was created
-              in order to assist others in the community that was behind keeping the multiplayer aspect of
-              the game alive. The lightweight Lua language was used by the engine to essentially script almost
-              every facet of a campaign mission, and this was used to create new solo/coop experiences by the community.
+              I designed and built a modded co-op campaign for the 2007 RTS game Supreme Commander using Lua. Documentation
+              was created in order to assist others in the community that was behind keeping the multiplayer aspect
+              of the game alive. The lightweight Lua language is used by the engine to essentially script every facet of 
+              a campaign mission, and this was used to create new solo/coop experiences by the community.
             </p>
           </div>
         </div>
@@ -52,14 +47,11 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-3">
-            <h1>Multiplayer IO Game</h1>
-            <h3>Javascript</h3>
+            <h1>Catburglers.io</h1>
             <p className = "summarization">
-              For my capstone project in Hunter, my group decided to build a simple multiplayer IO game.
-              We used express and websockets to build out the back-end, The back-end was built with express and websockets, 
-              while the front-end was built with the popular Web Canvas game engine - Phaser. Players host lobbies and join them through codes, up to a max of 4
-              players per lobby. When the game starts, they get put through the gameloop with accurate server-side
-              timekeeping, with the server also responsible for synchronizing all of the players.
+              For my capstone project at Hunter, my group built a simple multiplayer IO game. We used Express and Websockets 
+              to build out the back-end, and the web canvas game engine Phaser for the front-end. We supported up to four
+              concurrent players per lobby, with one player acting as the host. 
             </p>
           </div>
         </div>
@@ -72,11 +64,9 @@ function Projects() {
           </div>
           <div className = "project-text project-text-4">
             <h1>Game Engine</h1>
-            <h3>C++</h3>
             <p className = "summarization">
-              Four years at Hunter taught me much about development using C++. This basic 2D game engine comes 
-              complete with hitbox detection based on image dimensions, rendering, a canvas for drawing objects, and
-              an interface to build games with.
+              This basic 2D game engine comes complete with hitbox detection based on image dimensions, rendering, 
+              a canvas for drawing objects, and a developer interface.
             </p>
           </div>
         </div>
@@ -88,14 +78,11 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-5">
-            <h1>Discord Bot</h1>
-            <h3>Python</h3>
+            <h1>War Thunder Discord Bot</h1>
             <p className = "summarization">
-              A need in some communities for easy access to stats lead to my development of a python bot that used 
-              webscraping to pick up statistics from a 3rd party site, that then processes the stats into a digestible 
-              format. It calculates session stats, as well as provides a search function where you can either specify certain
-              vehicles or search for all vehicles that share the input's content. The bot displays everything in tables and
-              comes complete with pagination.
+              I created a Discord bot that scraped a third party website for player statistics. It calculates
+              session stats, and had a search function for specific vehicles. The bot displayed results in paginated
+              tables embedded into Discord messages.
             </p>
           </div>
         </div>
@@ -111,9 +98,9 @@ function Projects() {
             <h3>Javascript</h3>
             <p className = "summarization">
               My final project for Practical Web Development consisted of creating a fullstack CRUD web application
-              connected to a local postgres sql database. I used Pg and Sequelize to create and seed the database, then used
+              connected to a local Postgres SQL database. I used Pg and Sequelize to create and seed the database, then used
               Express to create a local server to host the data. The front-end UI is built using React, and actions are communicated
-              to the server by using Redux stores and thunks, as well as Axios for the http client.
+              to the server by using Redux stores and thunks, with Axios serving as the HTTP client.
             </p>
           </div>
         </div>
