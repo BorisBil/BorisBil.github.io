@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 import About from './components/pages/About'
 import Projects from './components/pages/Projects'
@@ -10,7 +10,7 @@ import {  TestBlog,
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className = "container">
       <Routes>
         <Route path = "/" element = {<About />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path = "/gridbasedattacks" element = {<GridBasedAttacks />} />
       </Routes>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
