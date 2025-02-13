@@ -65,9 +65,6 @@ function GridBasedPathfinding() {
 
                 <div className = "big-box">
                     <div className = "code-box">
-                        <p>
-                            GrassyHills.cs
-                        </p>
                         <pre id = "code">
                             <SyntaxHighlighter language="csharp" style={docco}>
                                 {GenerateGraphPart2}
@@ -163,7 +160,7 @@ function GridBasedPathfinding() {
 
                 <div className = "big-text-box">
                     <p>
-                        Now that all the math is done, we need to be able to tell our unit to move along the desired path. However, that topic deserves its own post, so I will be covering the answer to question 3 in the post about unit controls, as there are other factors we have to worry about when implementing these functions.
+                        Now that all the math is done, we need to be able to tell our unit to move along the desired path. This is very simple as you just click on the unit, right click on a tile, and the algorithm will work it out. For the enemy's turn, movements will happen for them based on calculations determining the best tile for them to move to. How you determine that is based entirely on what kind of behaviors you want from any specific kinds of enemies you plan on adding into your game.
                     </p>
                 </div>
 

@@ -20,12 +20,7 @@ function Blog() {
                     <td className = "Language">C#</td>
                 </tr>
                 <tr>
-                    <td className = "Link"><Link className = "routerlink" to = '/TestBlog'>Commanding Units in a Turn-Based Game</Link></td>
-                    <td className = "Project">Unity Game Development</td>
-                    <td className = "Language">C#</td>
-                </tr>
-                <tr>
-                    <td className = "Link"><Link className = "routerlink" to = '/TestBlog'>Grid Based Ranged Attack Calculations</Link></td>
+                    <td className = "Link"><Link className = "routerlink" to = '/gridbasedattacks'>Grid Based Ranged Attack Calculations</Link></td>
                     <td className = "Project">Unity Game Development</td>
                     <td className = "Language">C#</td>
                 </tr>
