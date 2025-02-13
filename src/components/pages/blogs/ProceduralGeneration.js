@@ -22,8 +22,6 @@ function ProceduralGeneration() {
         <p>
           The single most important element in any video game is the <b>core gameplay loop</b>. This is what people consume games for; they are looking for fun and satisfying mechanics to have fun with, whether that is city management, a 4x space game, or just running around shooting things. A strong core gameplay loop provides the foundation for a fantastic game. 
         </p>
-      </div>
-      <div className = "big-text-box">
         <p>
           Maps (or levels) exist to showcase this loop. Well designed maps are important at every stage of the game, whether the level serves as an introduction to new mechanics, or as a late-game challenge requiring full knowledge of the game's mechanics to overcome. In my Unity game Fantasy Tactics, I build procedurally generated levels that are planned to get progressively more difficult as the player party delves deeper into a dungeon. A basic template system serves as the foundation, enabling future expansions like improvements to generation algorithms and the introduction of new assets. Preset asset classes are used to generate the map and a pathfinding map is overlaid on top.
         </p>

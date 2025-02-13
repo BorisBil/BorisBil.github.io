@@ -24,9 +24,6 @@ function GridBasedAttacks() {
                     <p>
                         Since this is a PvE turn-based strategy game, we will need to give our players the ability to attack any creepy crawlies they'll find while sleuthing around dungeons. Conversely, we'll also need to give the ability of attacking to the enemy as well, as we don't want every too many training dummies!
                     </p>
-                </div>
-
-                <div className = "big-text-box">
                     <p>
                         The idea of attacks in a turn-based game on a grid is fairly simple: one character at a time attacks another character, or takes an action, on their turn. I will be taking inspiration from the XCOM series, and will implement a system of "hit chances," with a corresponding cover system able to affect these chances. Once you start delving into making this happen, some problems start cropping up, namely: 
                     </p>
@@ -36,9 +33,6 @@ function GridBasedAttacks() {
                     <p>
                         2) What kind of formula do we want to use for our weapons? This has a multitude of approaches, and I decide on a system with a curve that maximizes accuracy around a "sweet spot" while minimizing returns if the attack is made closer, or further, away, in order to represent how wieldy weapons are(after all, you wouldn't take a crossbow into a knife fight, would you?)
                     </p>
-                </div>
-
-                <div className = "big-text-box">
                     <p>
                         Lets start off by determing what constitutes as cover. In our map generation, we have "stepping" tiles and higher elevation tiles, such that it forms a wall relative to a lower, adjacent tile. We also have a variety of rocks, both big and small, scattered around the map. We need to be able to determine what covers what, as well as what kind of cover it provides. In this case, a "low profile" feature, such as a small rock will count as half cover, and a "high profile" feature, such as a wall, will count as full cover.
                     </p>

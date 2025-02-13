@@ -19,8 +19,6 @@ function GridBasedPathfinding() {
                     <p>
                         Following on from the blog that covered procedurally generating a map, we now have a map generator. There are now several problems we have to address:
                     </p>
-                </div>
-                <div className = "big-text-box">
                     <p>
                         1) How do we calculate the movement costs associated with moving from one tile to another
                     </p>
@@ -30,9 +28,6 @@ function GridBasedPathfinding() {
                     <p>
                         3) How do we tell our unit to start moving there
                     </p>
-                </div>
-                
-                <div className = "big-text-box">
                     <p>
                         Since the map is randomized every time it's generated, simply baking pathfinding solutions into the map is not a great way to go about it. We will need to generate something that I will refer to henceforth as a "graph," which is simply a dictionary of Node objects that are created on every tile. This lets us define each tile's neighbors, and thus, which tiles you can move to if you have a unit on that tile. In turn, this means we are able to have any kind of pathing that we want, as neighboring tiles don't even necessarily need to be next to each other.
                     </p>
@@ -52,9 +47,6 @@ function GridBasedPathfinding() {
                     <p>
                         To start off, we need to create the Node class and a dictionary of nodes. If you want to save on performance, you can skip tiles that are buried and will never get used. We will go through each spawned tile because of the plan to have underground enemies in the future. Regardless of that, we still need to set every node's walkability, and we do that by checking the tile's type, the tile's props, and whether or not any other tiles spawned on top.
                     </p>
-                </div>
-
-                <div className = "big-text-box">
                     <p>
                         Now that we've created a Node object at each tile location, we need to go through each node and find their neighbors. We want to add nodes that are next to each other, and if a half-step between elevations exists, we want to add those too. 
                     </p>

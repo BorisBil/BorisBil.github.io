@@ -6,6 +6,7 @@ function Projects() {
   return (
     <Layout>
       <div className = "project-wrapper">
+        <h1 className = "project-page-title">Projects</h1>
         
         <div className = "project-box project-box-1">
           <div className = "project-image project-image-1">
@@ -14,7 +15,7 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-1">
-            <h1>Fantasy Tactics</h1>
+            <h1 className = "project-title">Fantasy Tactics</h1>
             <p className = "summarization">
               This is an in progress turn-based fantasy strategy hybrid game that I have
               been developing in Unity. Features include a procedurally generated map, 
@@ -30,7 +31,7 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-2">
-            <h1>Operation Spirit (FAF)</h1>
+            <h1 className = "project-title">Operation Spirit (FAF)</h1>
             <p className = "summarization">
               I designed and built a modded co-op campaign for the 2007 RTS game Supreme Commander using Lua. Documentation
               was created in order to assist others in the community that was behind keeping the multiplayer aspect
@@ -47,7 +48,7 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-3">
-            <h1>Catburglers.io</h1>
+            <h1 className = "project-title">Catburglers.io</h1>
             <p className = "summarization">
               For my capstone project at Hunter, my group built a simple multiplayer IO game. We used Express and Websockets 
               to build out the back-end, and the web canvas game engine Phaser for the front-end. We supported up to four
@@ -63,7 +64,7 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-4">
-            <h1>Game Engine</h1>
+            <h1 className = "project-title">Game Engine</h1>
             <p className = "summarization">
               This basic 2D game engine comes complete with hitbox detection based on image dimensions, rendering, 
               a canvas for drawing objects, and a developer interface.
@@ -78,7 +79,7 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-5">
-            <h1>War Thunder Discord Bot</h1>
+            <h1 className = "project-title">War Thunder Discord Bot</h1>
             <p className = "summarization">
               I created a Discord bot that scraped a third party website for player statistics. It calculates
               session stats, and had a search function for specific vehicles. The bot displayed results in paginated
@@ -94,8 +95,7 @@ function Projects() {
             </a>
           </div>
           <div className = "project-text project-text-5">
-            <h1>Postgres Database</h1>
-            <h3>Javascript</h3>
+            <h1 className = "project-title">Postgres Database</h1>
             <p className = "summarization">
               My final project for Practical Web Development consisted of creating a fullstack CRUD web application
               connected to a local Postgres SQL database. I used Pg and Sequelize to create and seed the database, then used

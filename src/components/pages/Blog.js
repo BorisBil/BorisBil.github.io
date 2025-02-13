@@ -7,7 +7,7 @@ function Blog() {
     return (
       <Layout>
         <div className = "blog-wrapper">
-            <h1 className = "title">Blog Posts about Projects</h1>
+            <h1 className = "title">Blog Posts</h1>
             <table>
                 <tr>
                     <td className = "Link"><Link className = "routerlink" to = '/proceduralgeneration'>Procedural TileMap Generation</Link></td>
